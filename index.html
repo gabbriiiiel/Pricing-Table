@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.pricing-table {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pricing-plan {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.pricing-plan:hover {
+    transform: scale(1.05);
+}
+
+.featured {
+    border: 2px solid #1ED760;
+}
+
+.price {
+    font-size: 24px;
+    color: #1ED760;
+    margin: 10px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #1ED760;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1ED760;
+}
+</style>
+</head>
+
+<body>
+    <div class="pricing-table">
+        <div class="pricing-plan">
+            <h2>Basic</h2>
+            <p class="price">$1/week</p>
+            <ul>
+                <li>• 1 Device only</li>
+                <li>• Offline listening of up to 30 songs on 1 device</li>
+                <li>• Half Ad-free</li>
+                <li>• One-time payment</li>
+            </ul>
+            <button>Choose Plan</button>
+        </div>
+        <div class="pricing-plan featured">
+            <h2>Premium</h2>
+            <p class="price">$10/month</p>
+            <ul>
+                <li>• Up to 2 Devices</li>
+                <li>• Offline listening</li>
+                <li>• Ad-free</li>
+                <li>• High audio quality</li>
+            </ul>
+            <button>Choose Plan</button>
+        </div>
+        <div class="pricing-plan">
+            <h2>Premium+</h2>
+            <p class="price">$20/month</p>
+            <ul>
+                <li>• Up to 6 Devices</li>
+                <li>• Offline listening</li>
+                <li>• Ad-free</li>
+                <li>• Higher audio quality + Dolby atmos</li>
+                <li>• Better experience</li>
+            </ul>
+            <button>Choose Plan</button>
+        </div>
+    </div>
+</body>
+</html>
